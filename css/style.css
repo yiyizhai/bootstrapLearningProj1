@@ -1,0 +1,159 @@
+body {
+  padding-top: 50px;
+}
+
+.em-text{
+	/*overwrite the bootsrap.css using !important*/
+	color: #1cca98 !important;
+}
+
+.col-md-4{
+	margin-bottom: 20px;
+}
+
+section{
+	/*top, left, bottom, right*/
+	padding: 40px 0 40px 0;
+}
+
+section#feature{
+	background: #1caa98;
+	color: #fff;
+	padding: 40px;
+	overflow: auto;
+}
+
+section#feature ul li{
+	font-size: 22px;
+	list-style: none;
+	line-height: 2.0em;
+}
+
+section#feature ul {
+	padding: 0;
+	margin: 0;
+}
+
+.jumbotron{
+	/*add a background image*/
+	background: #1b222a url(../img/site_showcase_bg.jpg) no-repeat top center;
+	color: #fff;
+	height: 500px;
+	overflow: none;
+}
+
+.jumbotron h1{
+	margin: 30px;
+}
+
+.jumbotron p{
+	margin-bottom: 40px;
+}
+
+.jumbotron img.showcase-image{
+	width: 75%;
+	margin-right: 30px;
+}
+
+/*jumbtron as a reference*/
+.jumbotron img.app-btn{
+	width: 40%;
+	margin-right:30px;
+}
+
+img.demo{
+	width: 100%;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+footer{
+	background: #333;
+	color: #fff;
+	padding: 30px 0 20px 0;
+}
+
+footer li{
+	float: left;
+	padding: 0 10px 0 10px;
+	list-style: none;
+}
+
+footer p{
+	float: right;
+}
+
+/*Media queries*/
+/*run when the width is under 1200px*/
+@media(max-width: 1200px){
+	
+}
+
+/*get rid of the phone image*/
+@media(max-width: 991px){
+	.showcase-image{
+		display: none;
+	}
+}
+
+/*for the jarbatron*/
+@media(min-width: 768px) and (max-width: 990px){
+	.jumbotron img.app-btn{
+		width: 30%;
+	}
+
+	.jumbotron{
+		height: 400px !important;
+		background-size: 100% 100%;
+	}
+
+	.jumbotron h1{
+		margin-top: 10px;
+	}
+}
+
+@media(max-width: 768px){
+	.jumbotron{
+		height: 350px !important;
+		background-size: 100% 100%;
+	}
+
+	.jumbotron h1{
+		margin-top: 10px;
+	}
+}
+
+/*deal with the phone display*/
+@media(max-width: 500px){
+	/*background pic squashed*/
+	.jumbotron{
+		height: 450px !important;
+		background-image: none;
+		text-align: center;
+	}
+
+	.jumbotron img.app-btn{
+		width:60%;
+		margin: 0 auto 30px auto;
+		display: block;
+	}
+
+	section#feature ul li{
+		font-size: 19px !important;
+	}
+
+	footer{
+		float: none;
+		text-align: center;
+		padding-top: 20px; 
+	}
+}
+
+/*when super big*/
+@media(min-width: 1200px){
+	.jumbotron img.showcase-image{
+		width: 60%;
+		margin-right: 30px;
+		margin-top: 10px;
+	}
+}
